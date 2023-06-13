@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+
+}
+
+nav,
+header {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section, 
+video {
+    width: 100%;
+}
+
+header {
+    height: 62vh;
+    text-align: center;
+}
+
+
+/*mostrar es la clase que utilizamos 
+en el código de js*/
+.mostrar {
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: black;
+    width: 100vw;
+    padding: 2vw;
+}
+
+
+
+nav {
+    color: white;
+    background-color: blue;
+    height: 19vh;
+    padding: 0 8.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav div {
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+nav a,
+nav h1,
+header h3,
+header h1 {
+
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 40px;
+
+
+}
+
+header h3 {
+    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+}
+
+main section div {
+    width: 45,83%;
+
+
+}
+
+section div img {
+    width: 100%;
+
+
+}
+
+main  section:first-child {
+justify-content: space-between;
+display: flex;
+flex-wrap: wrap;
+padding: 50px;
+
+}
+
+
+nav h1 {
+    font-weight: 500;
+    margin: 0;
+}
+
+header h1 {
+    font-family: 'Crimson Text', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a,
+header a {
+    font-size: 20px;
+}
+
+header p 
+{font-size: 17px;}
+
+nav a {
+
+    color: white;
+}
+
+header a {
+    text-transform: capitalize;
+    color: white;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+header a:hover{
+    background-color:rgb(255, 20, 147);
+    transition: all 1000ms;
+}
+ /* header a {
+    text-transform: capitalize;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: blue;
+    transition: background-color 1s;
+    
+}
+header a :hover {
+    background-color:  deeppink;
+}
+*/ 
+
+nav span {
+    display: none;
+}
+
+/*lo hago desaparecer*/
+
+
+.icon-menu,
+.icon-icono-1,
+.icon-icono-2 {
+
+    font-size: 6vw;
+
+}
+
+.icon-menu:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    /*implementamos la mano*/
+}
+
+div p {
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+    font-weight: 300px;
+    font-size: 30px;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    animation-name: miMovimiento;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: blue;
+}
+
+@keyframes miMovimiento {
+    form {
+color: blue;
+    }
+
+    to {
+color: deeppink;
+    }
+}
+
+
+@media(max-width:992px) {
+
+
+    nav div {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    nav div {
+        display: none;
+    }
+
+    /*lo hago desaparecer*/
+
+    nav span {
+        display: inline;
+    }
+
+    /*lo vuelo a mostrar*/
+
+
+}
